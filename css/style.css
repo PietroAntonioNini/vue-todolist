@@ -5,6 +5,28 @@
 }
 /* reset */
 
+body {
+    background-color: #070F2B;
+    cursor: default;
+}
+
+h1{
+    color: #393891;
+}
+
+.my_li {
+    background-color: #535C91;
+    color: #1B1A55;
+}
+
 .done {
     text-decoration: line-through;
+}
+
+ul .fa-solid {
+    cursor: pointer;
+} 
+
+.buttons input {
+    background-color: #535C91;
 }
