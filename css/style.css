@@ -8,6 +8,7 @@
 body {
     background-color: #070F2B;
     cursor: default;
+    user-select: none;
 }
 
 h1{

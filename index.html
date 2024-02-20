@@ -20,14 +20,14 @@
         <h1 class="text-center py-5 fw-bold">Lista di cose da fare</h1>
 
         <ul class="list-group w-25 m-auto">
-            <li class="list-group-item d-flex justify-content-between my_li" v-for="todo in todos">
+            <li class="list-group-item d-flex justify-content-between my_li text-capitalize" v-for="todo in todos" @click="signTodo(todo)">
                 <span :class="{ 'done': todo.done }">{{ todo.text }}</span>
                 <i class="fa-solid fa-x text-black align-self-center" @click="removeTodo(todo)"></i>
             </li>
         </ul>
 
         <div class="buttons d-flex align-baseline justify-content-around py-5 w-25 m-auto">
-            <input class="border-0 rounded-2" type="text" v-model="newTodo">
+            <input class="border-0 rounded-2" type="text" v-model="newTodo" @keyup.enter="addTodo()">
             <button type="button" class="btn btn-outline-success btn-sm" @click="addTodo()">Aggiungi</button>
         </div>
     </div>
